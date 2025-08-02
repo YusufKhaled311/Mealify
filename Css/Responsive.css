@@ -1,0 +1,170 @@
+@media (min-width: 576px) {
+
+    /* =======Home======= */
+    #Home .home-image {
+        max-width: 85%;
+        order: -1;
+    }
+
+    .container {
+        max-width: var(--container-width);
+        margin: auto;
+        padding: 2.2rem 0.3125rem;
+    }
+
+
+}
+
+
+@media (min-width: 768px) {
+
+
+
+    /* ====Navbar======= */
+    nav .container
+    {
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--container-padding);
+    }
+    .nav-list ul {
+        display: flex;
+        column-gap: 1.25rem;
+    }
+     .link-mode .bars
+     {
+        display: none;
+     }    
+
+    /* =======Home======= */
+
+    #Home .home-content {
+        max-width: 90%;
+    }
+
+
+    /* ===Chefs */
+
+    .cards {
+
+        justify-content: center;
+    }
+
+    .cards .chef-card {
+        max-width: calc(calc(100% - var(--gap)) / 2)
+    }
+
+    /* Gallery */
+    .gallery-container {
+        columns: 2 250px;
+    }
+
+    /* Contact */
+    .contact-details {
+        justify-content: space-between;
+    }
+
+    .contact-details>div {
+        width: calc(calc(100% - var(--gap)) / 2);
+
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+
+    footer .about {
+        width: calc(calc(100% - var(--gap)) / 2);
+        order: -2;
+    }
+
+    footer .Subscribe {
+        width: 100%;
+    }
+
+    .get-in-touch {
+        width: calc(calc(100% - var(--gap)) / 2);
+        order: -2;
+    }
+
+
+
+
+
+
+
+}
+
+
+@media (min-width: 992px) {
+    /* =======Home======= */
+
+    #Home .container {
+
+        flex-direction: row;
+    }
+
+    #Home .home-image {
+        max-width: 40%;
+        order: 2;
+    }
+
+    #Home .home-content {
+        max-width: 35%;
+        text-align: left;
+        align-items: flex-start;
+
+    }
+
+    .book-btn {
+        padding: 0.625rem 1.2rem;
+        font-size: .812rem;
+        font-weight: 600;
+    }
+
+
+    /* Chefs */
+    .cards .chef-card {
+        max-width: calc(calc(100% - var(--gap) * 2) / 3);
+        flex-wrap: nowrap;
+
+    }
+
+    /* Gallery */
+    .gallery-container {
+        columns: 3 250px;
+    }
+
+    /* Contact */
+    .contact-form .f-s-input {
+
+        flex-direction: row;
+    }
+
+    .contact-form .f-s-input {
+        width: 100%;
+    }
+
+    /* Foter */
+    footer .about {
+        width: calc(calc(100% - var(--gap) * 2) / 4);
+        order: 0;
+    }
+
+    footer .Subscribe {
+        width: calc(calc(100% - var(--gap) * 2) / 2)
+    }
+
+    .get-in-touch {
+        width: calc(calc(100% - var(--gap) * 2) / 4);
+
+        order: 0;
+    }
+
+}
+
